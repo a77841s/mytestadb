@@ -1,4 +1,4 @@
-![Adblock Plus 2.0]
+[Adblock Plus 2.0]
 ! Checksum: DY6CdTnA3bZ7YfN/UdEDCg
 ! Title: AdGuard Base filter
 ! Description: This filter is necessary for quality ad blocking.
