@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: 2Eo+LX2DyxglJcSZxwQQug
+! Checksum: ZEE7OvGaZpKvFuqewtnyow
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.0.25.59
-! TimeUpdated: 2019-08-01T14:30:19+03:00
+! Version: 2.0.25.70
+! TimeUpdated: 2019-08-02T18:02:03+03:00
 ! Expires: 2 days (update frequency)
 ! Homepage: http://adguard.com/filters.html#annoyances
 ! License: http://creativecommons.org/licenses/by-sa/3.0/
@@ -101,7 +101,7 @@ piratedhub.com###blog_subscription-3
 ! https://github.com/AdguardTeam/AdguardFilters/issues/37179
 windowsobraz.com##.marquee
 ! https://github.com/AdguardTeam/AdguardFilters/issues/34346
-anidub.tv##.foothead
+anidub.com,anidub.tv##.foothead
 ! https://github.com/AdguardTeam/AdguardFilters/issues/35009
 ! https://github.com/AdguardTeam/AdguardFilters/issues/35117
 qyer.com##.advertising
@@ -182,7 +182,7 @@ ltn.com.tw#%#AG_onLoad(function() { $('div[class^="photo picbox 1 photoOn"] > a[
 ! https://github.com/AdguardTeam/AdguardFilters/issues/28876
 instagram.com##.ZUqME.N9d2H[style="width: 100%;"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/28313
-play.shikimori.org##.about-ads
+shikimori.one,shikimori.org##.about-ads
 ! https://github.com/AdguardTeam/AdguardFilters/issues/29802
 last.fm##.nag-bar--language-mismatch-prompt
 ! https://github.com/AdguardTeam/AdguardFilters/issues/29341
@@ -1140,7 +1140,10 @@ sprashivalka.com##div[class="a1 "][style="height: 90px;"]
 !***
 !* Subscriptions/newsletters (not popups)
 !*
+kauppalehti.fi##.newsletter-subscribe-container
 masterpaiki.ru#?##secondary .widget-title:contains(Новые статьи на почту)
+bowandtie.ru,realnyezarabotki.com##.widget_wysija
+hairlife.ru##.panel_subscribe
 compgramotnost.ru##.postSubscribe
 1zaicev.ru##.center-subscribe
 upscpdf.com##.widget_blog_subscription
@@ -1190,7 +1193,6 @@ adidas.ru##div[class^="footer_newsletter"]
 adidas.ru##div[class^="footer-newsletter"]
 subscity.ru#?#.undernavbar-container:has(> div:contains(Подписывайтесь на нас))
 realnyezarabotki.com##.section > .form-static
-realnyezarabotki.com##.widget_wysija
 priluki.city###block-giz-mail-giz-mail-subcribe
 tonkosti.ru##.journal-subscribe
 siteclinic.ru##.enroll-to-articles
@@ -1408,7 +1410,7 @@ iguides.ru###sender-subscribe
 segodnya.ua##.sign-for-news
 omgfoss.com##.widget_bloomwidget
 forumsamochodowe.pl###newsletter
-trueachievements.com##.email-signup
+beautifulhomes.com,trueachievements.com##.email-signup
 theatlantic.com##.c-newsletter-promo
 popmech.ru##.subscription_block
 turizm.ru##.subscribe
@@ -1621,14 +1623,11 @@ nicematin.com##.newsletter_block
 buyon.ru##.subscribe-b
 wordcounter.io##.email
 theglobeandmail.com###subscription-pencil-area
-btdunyasi.net##.widget_wysija
 clashofclanslovers.com###email-subscribers-4
 photoshoptutorials.ws##.jetpack_subscription_widget
 beautyhack.ru##.sp-form
 beautyhack.ru##.subscribe_fix
 theverge.com##.c-newsletter_signup_box
-journo.com.tr##.herald-sidebar .widget_wysija
-journo.com.tr##.herald-sticky > #text-4
 two-movies.com##.subscribeBlock
 huffpost.com,huffingtonpost.com##.inline-newsletter
 huffingtonpost.co.uk##.follow-us
@@ -2186,8 +2185,11 @@ ggmyfriend.com###check-also-box
 ! START: Mail.ru
 ! Main page
 mail.ru,~auto.mail.ru,~cloud.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~go.mail.ru,~health.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,~mailblog.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~otvet.mail.ru,~pogoda.mail.ru,~realty.mail.ru,~touch.mail.ru,~tv.mail.ru#%#//scriptlet("set-constant", "Object.prototype.baits", "undefined")
+!
 otvet.mail.ru##.wrapper_columns > div.column_right
 otvet.mail.ru#%#//scriptlet("set-constant", "Object.prototype.direct", "undefined")
+!
+sportmail.ru#%#//scriptlet("set-constant", "Object.prototype.mimic", "undefined")
 ! END: mail.ru
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/35046
@@ -2264,12 +2266,12 @@ androidworld.it#%#AG_abortInlineScript(/enm.com/, 'navigator');
 !
 ! `AdBlock Notify` (anOptions)
 ! Scriptlet for the rule below#%#//scriptlet("abort-on-property-read", "anOptions")
-androidexplained.com,borodavsem.ru,czechavfree.com,karaokes.com.ar,kulturalnemedia.pl,magazeta.com,mur.tv,o365info.com,proswift.ru,sovetolog.com,tehnobzor.ru,thelongdark.ru,thewindowsclub.thewindowsclubco.netdna-cdn.com,windowstechblog.nl,xiaomitech.net#%#//scriptlet("abort-on-property-read", "anOptions")
+gpcoder.com,androidexplained.com,borodavsem.ru,czechavfree.com,karaokes.com.ar,kulturalnemedia.pl,magazeta.com,mur.tv,o365info.com,proswift.ru,sovetolog.com,tehnobzor.ru,thelongdark.ru,thewindowsclub.thewindowsclubco.netdna-cdn.com,windowstechblog.nl,xiaomitech.net#%#//scriptlet("abort-on-property-read", "anOptions")
 ! for platforms without JS rules support
 /wp-content/uploads/*/*.js$domain=androidexplained.com|borodavsem.ru|czechavfree.com|karaokes.com.ar|magazeta.com|mur.tv|o365info.com|proswift.ru|sovetolog.com|tehnobzor.ru|thelongdark.ru|thewindowsclub.thewindowsclubco.netdna-cdn.com|windowstechblog.nl|xiaomitech.net
-androidexplained.com,borodavsem.ru,czechavfree.com,karaokes.com.ar,kulturalnemedia.pl,magazeta.com,mur.tv,o365info.com,proswift.ru,sovetolog.com,tehnobzor.ru,thelongdark.ru,thewindowsclub.thewindowsclubco.netdna-cdn.com,windowstechblog.nl,xiaomitech.net#@##adsense
-androidexplained.com,borodavsem.ru,czechavfree.com,karaokes.com.ar,kulturalnemedia.pl,magazeta.com,mur.tv,o365info.com,proswift.ru,sovetolog.com,tehnobzor.ru,thelongdark.ru,thewindowsclub.thewindowsclubco.netdna-cdn.com,windowstechblog.nl,xiaomitech.net#@#.an-advert-banner
-androidexplained.com,borodavsem.ru,czechavfree.com,karaokes.com.ar,kulturalnemedia.pl,magazeta.com,mur.tv,o365info.com,proswift.ru,sovetolog.com,tehnobzor.ru,thelongdark.ru,thewindowsclub.thewindowsclubco.netdna-cdn.com,windowstechblog.nl,xiaomitech.net#@#.an-sponsored
+gpcoder.com,androidexplained.com,borodavsem.ru,czechavfree.com,karaokes.com.ar,kulturalnemedia.pl,magazeta.com,mur.tv,o365info.com,proswift.ru,sovetolog.com,tehnobzor.ru,thelongdark.ru,thewindowsclub.thewindowsclubco.netdna-cdn.com,windowstechblog.nl,xiaomitech.net#@##adsense
+gpcoder.com,androidexplained.com,borodavsem.ru,czechavfree.com,karaokes.com.ar,kulturalnemedia.pl,magazeta.com,mur.tv,o365info.com,proswift.ru,sovetolog.com,tehnobzor.ru,thelongdark.ru,thewindowsclub.thewindowsclubco.netdna-cdn.com,windowstechblog.nl,xiaomitech.net#@#.an-advert-banner
+gpcoder.com,androidexplained.com,borodavsem.ru,czechavfree.com,karaokes.com.ar,kulturalnemedia.pl,magazeta.com,mur.tv,o365info.com,proswift.ru,sovetolog.com,tehnobzor.ru,thelongdark.ru,thewindowsclub.thewindowsclubco.netdna-cdn.com,windowstechblog.nl,xiaomitech.net#@#.an-sponsored
 !
 ! Glomex player adblock detection (so far only visible in filter log - 23.11.2018)
 ! @@||ad.doubleclick.net/ddm/pfadx^$domain=player.glomex.com
@@ -2299,6 +2301,7 @@ vladan.fr#@#.text-ads
 vladan.fr#@#.textAd
 vladan.fr#@#.text_ads
 !
+tube8.com###adBlockAlertWrap
 @@||viggle.tv/ads.js
 investmentwatchblog.com###custom_html-22
 @@||thedailybeast.com/static/advert.js
@@ -5233,6 +5236,12 @@ andoveradvertiser.co.uk,asianimage.co.uk,banburycake.co.uk,barryanddistrictnews.
 ! ###gdpr
 looper.com,fromdoctopdf.com,learnersdictionary.com,spanishdict.com,merriam-webster.com,digi24.ro,antena3.ro,wikihow.com.tr,wikihow.cz,wikihow.it,wikihow.jp,wikihow.vn,wikihow.com,mobil.se,digisport.ro,periscope-solutions.com###gdpr
 !
+sachane.com##.sa-cookie-law
+tube8.com##.accept-cookies-wrapper
+atlantic.net###alert-box
+is.fi#$##sccm-container { display: none!important; }
+is.fi#$#body.sccm-noscroll { overflow: visible!important; }
+mysoftware.esko.com###web-messages
 marvelousdesigner.com##.cookiesUseAgree
 clo3d.com##.head > .banner.info
 investmentwatchblog.com###custom_html-14
@@ -5495,7 +5504,7 @@ homebanking-hilfe.de###annoyingeucookiemsg
 cylance.com##.js-cookiePolicy
 streamlabs.com##.s-callout--cookies
 xsport.ua##.cookie-agreement
-telkku.com,mikrobitti.fi#$##alma-data-policy-banner { position: absolute!important; left: -3000px!important; }
+iltalehti.fi,kauppalehti.fi,telkku.com,mikrobitti.fi#$##alma-data-policy-banner { position: absolute!important; left: -3000px!important; }
 ||dam.bbcchannels.com/*/js/outside-iframe.js
 eshopwedrop.lt###coockies_box
 musicmap.info###privacy-policy-banner
@@ -5896,7 +5905,7 @@ pkobp.pl##.cookie-rodo
 dreamcatchers.fr##.cookies_v16
 bolgegundem.com,neoldu.com###cm-cookie-policy
 philips.com.au,philips.de##.dot-cc-wrapper
-nalivay-ka.ru##.lwpcngNotice
+perstni.com,nalivay-ka.ru##.lwpcngNotice
 abazero.com,sosvirus.net,studydhaba.com##.fusion-privacy-bar
 marketcentral.hu##.cookieModal
 justanswer.de##.cookieBannerText
@@ -9351,6 +9360,11 @@ sodapdf.com##.be-tooltip
 !
 ! Specific sites
 !
+askdavetaylor.com##.spu-bg
+askdavetaylor.com##.spu-box
+zaochnik.ru#$#.modal_subscribe { display: none!important; }
+zaochnik.ru#$#body { overflow: visible!important; }
+zaochnik.ru#$#html { overflow: visible!important; }
 upscpdf.com###fancybox_ns-overlay
 upscpdf.com###fancybox_ns-wrap
 bodrumluculuk.com##.ad-popup
@@ -9676,7 +9690,7 @@ racketboy.com###rb-newsletter
 newsday.com#$#body.modal-open { overflow: visible!important; }
 newsday.com#$#body.modal-open .modal-scrollable { display: none!important; }
 newsday.com#$#body.modal-open .modal-scrollable + .connext-modal-backdrop { display: none!important; }
-manamoa10.net,manamoa9.net,manamoa8.net,manamoa6.net,manamoa4.net,newtoki22.net,newtoki8.com,newtoki7.net,newtoki4.net,newtoki2.net###hd_pop
+manamoa10.net,manamoa9.net,manamoa8.net,manamoa6.net,manamoa4.net,newtoki22.com,newtoki22.net,newtoki8.com,newtoki7.net,newtoki4.net,newtoki2.net###hd_pop
 life-reactor.com##.telegram_channel
 filmes-torrent-baixar.blogspot.com###fundopop
 filmesonlinex.co##.ArevicoModal
@@ -10315,7 +10329,7 @@ wealthmagnate.com##.optin-monster-overlay
 reklamkutuphanesi.com##.td-more-articles-box
 monster.de###topPopupEmailCardViewWidget
 ||fastpic.ru/chrome.php
-gdz.ru##.popUp-subscribe
+megaresheba.ru,gdz.ru##.popUp-subscribe
 kompkimi.ru,yesilist.com,hvg.hu,penzcentrum.hu,markimarta.ru,vucutgelistirmehareketleri.org,yumurtaliekmek.com,wealthmagnate.com,polatbuyukarslan.com###upprev_box
 ln-cc.com##.b-email_popup-notification
 petri.com##.bottom-interstitial
@@ -11263,6 +11277,7 @@ wallstreet-online.de,dni.ru,polit.info#%#if (window.PushManager) { window.PushMa
 ||push4site.com^$third-party
 ||cleverpush.com^$third-party
 !
+lanacion.com.ar##.notificacion-modal
 /sw.js$domain=avtoblog.ua|tmearn.com
 lokalmatador.de#%#AG_setConstant('navigator.geolocation', 'noopFunc');
 /push.js$domain=acunn.com|tsn.ua|sputnik.by|nation-news.ru
@@ -12638,6 +12653,8 @@ newsweek.com##iframe[src="http://sns.europe.newsweek.com/newsletter?popup=1"]
 !######### JS tweaks ##########
 !##############################
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/37849
+up-to-down.net#%#AG_onLoad(function(){if(window.location.href.match(/https?:\/\/up-to-down\.net\/\d+\//)){var a=document.body.textContent.match(/(?<=window\.location\.href = \(")[\s\S]*?(?="\);)/);if(a)location=a;}});
 ! https://github.com/AdguardTeam/AdguardFilters/issues/33295
 ultimedia.com#%#AG_defineProperty('dtkPlayer.infos.autoplay', {value: "no"});
 ! https://github.com/AdguardTeam/AdguardFilters/issues/36619
@@ -12779,6 +12796,7 @@ droidtk.com#$#body[data-protect="true"] { -webkit-touch-callout: default!importa
 toptech360.com,devicespecifications.com,apkinstaller.com,androidmtk.com,serial-key.com,sjcrack.com,themeslide.com,openssource.biz,kinogo-net-2017.ru,kinogo-online.online,kino-zal.net,lavka-invaitov.ru#$#body * { -webkit-touch-callout: default!important; -moz-user-select: text!important; -webkit-user-select: text!important; -ms-user-select: text!important; -o-user-select: text!important; user-select: text!important; -khtml-user-select: text!important; }
 catekno.com#$#img { -webkit-touch-callout: default!important; -webkit-user-select: text!important; }
 !--- JS ----
+newtoki22.com#%#window.addEventListener("contextmenu",function(a){a.stopPropagation()},!0);
 shield-project.ru#%#//scriptlet("abort-on-property-write", "document.oncontextmenu")
 hjkhgyss.tistory.com,maniac-game.tistory.com#%#AG_onLoad(function() { document.oncontextmenu = document.ondragstart = document.onselectstart = function() { return true; }; });
 teachios.com#%#AG_onLoad(function() { document.ondragstart = document.onselectstart = document.oncontextmenu = null; });
