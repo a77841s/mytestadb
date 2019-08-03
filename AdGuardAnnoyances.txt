@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: ZEE7OvGaZpKvFuqewtnyow
+! Checksum: 9265YcU3Zmw+ZxSPJjDgug
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.0.25.70
-! TimeUpdated: 2019-08-02T18:02:03+03:00
+! Version: 2.0.25.71
+! TimeUpdated: 2019-08-02T20:30:19+03:00
 ! Expires: 2 days (update frequency)
 ! Homepage: http://adguard.com/filters.html#annoyances
 ! License: http://creativecommons.org/licenses/by-sa/3.0/
@@ -9147,7 +9147,6 @@ bing.com#$##bLogoExp { display:block!important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/37020
 unian.net#$#.app-weather { display: none!important; }
 unian.net#$#.main-column > div > aside { height: 30px!important; }
-unian.net#$#.wrap-aside { height: 0!important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/16638
 zillow.com#$##app-upsell > .fixed-banner { display: none!important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/16641
