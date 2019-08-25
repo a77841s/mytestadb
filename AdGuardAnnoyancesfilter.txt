@@ -1,9 +1,9 @@
-﻿[Adblock Plus 2.0]
-! Checksum: trWrpINz5HrZ6fXdWMcyXA
+[Adblock Plus 2.0]
+! Checksum: kpPwvy5pOxORsveNAy+FCw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.0.27.1
-! TimeUpdated: 2019-08-23T03:02:06+03:00
+! Version: 2.0.27.10
+! TimeUpdated: 2019-08-24T10:30:11+03:00
 ! Expires: 2 days (update frequency)
 ! Homepage: http://adguard.com/filters.html#annoyances
 ! License: http://creativecommons.org/licenses/by-sa/3.0/
@@ -80,6 +80,8 @@
 !
 !######### Annoying elements (not ads)
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/39069
+gotporn.com##div[data-event-type="REC_CLICK"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/38876
 thedrum.com#$#.freewall--disable .article * { filter: blur(0px) !important; }
 thedrum.com#$#.freewall { display: none !important; }
@@ -1243,7 +1245,7 @@ infowars.com###newsletter-side-widget
 infowars.com##.article-footer-details > a[href="/newsletter-sign-up/"]
 eaomedia.ru###soc_invites_block
 softikbox.com##.subscribers-form
-kimintelefonu.com,catwalkyourself.com##.newsletter
+freundin.de,kimintelefonu.com,catwalkyourself.com##.newsletter
 patch.com##.patch-home-page-subscribe-block
 brodude.ru##.site__footer-center-subscribe-form
 fitness-pro.ru##.mailsubscribe
@@ -2343,6 +2345,8 @@ vladan.fr#@#.text_ads
 applesfera.com##.ad-cen
 jdoodle.com#?#.home-container > #codefund  > span.codfund-fallback:contains(This site is ad supported! Please consider disable Ad blocker!)
 tvfeed.in#%#//scriptlet("prevent-setTimeout", "adblock")
+iconmonstr.com#%#AG_abortInlineScript(/abisuq/, 'document.addEventListener');
+iconmonstr.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "/abisuq/")
 @@||static.trafficjunky.com/ab/ads_test.js
 nissan.webstarterz.com#@#.adsBox
 redtube.com#@#.adsbox
@@ -2353,7 +2357,7 @@ tube8.com###adBlockAlertWrap
 @@||viggle.tv/ads.js
 investmentwatchblog.com###custom_html-22
 @@||thedailybeast.com/static/advert.js
-indoxx1.center#@#.adBanner
+indoxxi.center#@#.adBanner
 alexeyworld.com#$#.adsbygoogle { display: block!important; height: 1px!important; }
 stltoday.com#%#AG_abortOnPropertyRead('__tnt.adBlockEnabled');
 @@||mtb-mag.com/forum/js/siropu/am/ads.min.js
@@ -5644,7 +5648,7 @@ forex.com##.alert-section[data-cookie-alert="cookieAlert"]
 patook.com###cookies_subtext
 amarujala.com#$#body.showcookiespopup { overflow: visible!important; margin-right: 0!important; }
 charlotteobserver.com##body > .modal-banner[style^="color:"]
-freetuts.download,gradown.com##.jnews-cookie-law-policy
+techacrobat.com,freetuts.download,gradown.com##.jnews-cookie-law-policy
 nonsensediamond.website##.wb_cookie_policy
 zalando-lounge.be##div[class^="CookieConsent_cookie"]
 stopad.io##.js-gdpr-modal
@@ -5759,7 +5763,7 @@ ipv6onlyhosting.com###gdprBanner
 jpurecords.com##.upsell-gdpr-banner-container
 compress-or-die.com###CybotCookiebotDialog
 chsu.ru##.cookies-message-box
-m.apotheken-umschau.de##.cc_banner-wrapper
+hifi-forum.de,m.apotheken-umschau.de##.cc_banner-wrapper
 sowetanlive.co.za###gdpr-overlay
 dataprotection.com.ua,drweb-av.de,drweb-av.es,drweb-av.it,drweb.cn,drweb.co.jp,drweb.com,drweb.fr##.SHOWIT-msgCase > .SHOWIT-msg_showed
 allfreeapk.com###cookieScriptId ~ .fot-fixd
@@ -6674,7 +6678,7 @@ vogue.ru##.cookie-pane
 bazaar.ru##.disclame_block
 rbc.ua##.privasypolicy-info
 bauexpertenforum.de##.noticeCookiesContent
-change.org##.privacy-policy-banner
+accuweather.com,change.org##.privacy-policy-banner
 coolicool.com##.cookie-tip-bg
 downdetector.ru##.container[style="display: block;"]
 megogo.net,megogo.ru##.agreement-notify_v1
@@ -6847,7 +6851,7 @@ shophair.ru##.modal_popup_sessid_box
 tomshardware.com,tomshardware.co.uk##.prism-modal
 motor1.com###privacy_accept
 gadgetsnow.com##.consent-popup
-rambox.pro,indiansexvideos.porn,sacheats.com,pitwalk.de,getpaidtoshare.money,cezeta.com,gsc-game.com,hometurkey.com,kinonet.pl,praxis-jugendarbeit.de,gta-gorevleri.com,mtled-novels.com,uploadcloud.pro,reversinglabs.com##.cookieinfo
+shadersmod.com,rambox.pro,indiansexvideos.porn,sacheats.com,pitwalk.de,getpaidtoshare.money,cezeta.com,gsc-game.com,hometurkey.com,kinonet.pl,praxis-jugendarbeit.de,gta-gorevleri.com,mtled-novels.com,uploadcloud.pro,reversinglabs.com##.cookieinfo
 benefitcosmetics.com##.ghostery-implied-consent-notice
 thoughtco.com,lifewire.com##.cookie-notification-banner
 newmofu.doorblog.jp,bluedesigns.com,ebay.at,ebay.com.au,ebay.fr,gumtree.com,ebay.be,ebay.co.uk,ebay.com,ebay.de,ebay.it,rockstargames.com###gdpr-banner
@@ -6855,7 +6859,7 @@ wtatennis.com##.wta-cookies-policy
 gzt.com,yenisafak.com##.policy.active
 netcarshow.com##body > #cNag
 biztonsagportal.hu##.mt-cookie-consent-bar
-transfermarkt.de,netzwelt.de,focus.de##.as-oil
+moviejones.de,transfermarkt.de,netzwelt.de,focus.de##.as-oil
 silenceisconsent.net,allenwestrepublic.com##.klicked-privacy-banner
 comunio.de###cookieUsageHint
 viafree.dk##.cookie-bar
@@ -6926,7 +6930,7 @@ web.de,gmx.net##div[data-cookielayer-init]
 web.de,gmx.net##.cookie-lasche-hp
 dplay.dk##div[class^="pageContainer-"] > dialog[class^="notification-"]
 pornxs.com###cookiePolicyNoticeBox
-volksfreund.de,aachener-zeitung.de,aachener-nachrichten.de,wz.de,rp-online.de##.park-snackbar-cookies
+saarbruecker-zeitung.de,volksfreund.de,aachener-zeitung.de,aachener-nachrichten.de,wz.de,rp-online.de##.park-snackbar-cookies
 elektrikforum.de,wilderssecurity.com##.Notice.DismissParent
 tvr.co.uk##.cookie-wrap
 rockpapershotgun.com###ecd_opt_in_banner
@@ -7043,7 +7047,7 @@ superiorwallpapers.com,wallpapermania.eu##.uk-alert
 tvn24.pl,player.pl##.cookie-notice
 atresplayer.com##.capa_cookies
 elespanol.com###pCookieModal
-radiotimes.com##.cookie-notification
+tichyseinblick.de,radiotimes.com##.cookie-notification
 9bis.net##body > div[style="width:100%"] > div[style="text-align:center;color:white;background-color:lightgray;width=70%;"]
 akampus.com###site_cookies_warning_id
 nflgamepass.com##cookies-policy-confirm
@@ -8605,6 +8609,7 @@ facebook.com,facebookcorewwwi.onion#%#(function() { var observer=new MutationObs
 !! disabled due to rule update in English move rule to English filter if still nothing broken on 31.10.2018
 ! facebook.com##div[id^="substream_"] div[id^="hyperfeed_story_id_"][-ext-has='[id*="feed_subtitle_"] a[href^="https://www.facebook.com/#"] > span > span']
 ! End Facebook
+freundin.de#?#.region-infinite-block > .region-full-content:has( > .newsletter)
 moydrygpk.ru#?#.side-title:contains("Мой видеоканал")
 utsidethebox.ms#?#.widget > div.widget-wrap:has(> div.textwidget > div[align="center"] > div.subscription-sidebar)
 thegatewaypundit.com#?#.page-sidebar > div.enhanced-text-widget:has(> h4:contains(Newsletter))
@@ -9520,6 +9525,10 @@ sodapdf.com##.be-tooltip
 !
 ! Specific sites
 !
+tabletopgaming.co.uk#$#body { overflow: visible !important; }
+tabletopgaming.co.uk#$#.modal-backdrop { display: none !important; }
+tabletopgaming.co.uk#$##cookie-control-modal { display: none !important; }
+thehindu.com##.entrySubs
 rei.com#$#.modal-open { overflow: visible !important; }
 rei.com#$##emailAcqModal { display: none !important; }
 rei.com#$#.modal-backdrop { display: none !important; }
@@ -12368,8 +12377,9 @@ ebok.vectra.pl###main-container > a[href="https://bm.pl/promocja-vectra-i-master
 twitch.tv##main.tw-flex > div[class]:not([data-test-selector]) > div[data-test-selector="test_selector_prime_tracking_button_wrapper"]
 ! amazon self-promo in search
 amazon.de##iframe[srcdoc*="thirdPartySponsorLinkFirst"]
-amazon.de###search > span[data-component-type="s-footer-slot"] > .amzn-safe-frame-container
-amazon.de###search > span[data-component-type="s-top-slot"] .mwebSparkle
+amazon.de##span[data-component-type="s-skyscraper-slot"]
+amazon.de###search span[data-component-type="s-footer-slot"] .amzn-safe-frame-container
+amazon.de###search span[data-component-type="s-top-slot"] .mwebSparkle
 ! amazon self-promo in item descriptions
 amazon.de,amazon.co.uk###detail-ilm_div
 amazon.de,amazon.co.uk###heroQuickPromo_feature_div
@@ -13467,9 +13477,9 @@ tuttosportweb.com###sidebar
 nhentai.net##footer > p > b
 nhentai.net###chatbanner
 ! chatango.com widget
-animefrenzy.net,sedsports.com,filmbioskop21.me,indoxxi.show,strikeout.nu,aniwatcher.com,mylivecricket.info##iframe[src*="chatango.com"]
-||st.chatango.com^$domain=animefrenzy.net|sedsports.com|filmbioskop21.me|indoxxi.show|cricfree.sc|cricfree.live|wespeakrugby.com|bosscast.net|strikeout.nu|aniwatcher.com|mylivecricket.info
-filmbioskop21.me,indoxxi.show##.chatango-btn
+animefrenzy.net,sedsports.com,filmbioskop21.fun,indoxxi.show,strikeout.nu,aniwatcher.com,mylivecricket.info##iframe[src*="chatango.com"]
+||st.chatango.com^$domain=animefrenzy.net|sedsports.com|filmbioskop21.fun|indoxxi.show|cricfree.sc|cricfree.live|wespeakrugby.com|bosscast.net|strikeout.nu|aniwatcher.com|mylivecricket.info
+filmbioskop21.fun,indoxxi.show##.chatango-btn
 !
 ! Exchange rates widgets
 ||widgets.coingecko.com^$third-party
