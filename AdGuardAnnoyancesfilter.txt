@@ -1,9 +1,9 @@
 ﻿![Adblock Plus 2.0]
-! Checksum: ZI20n31mK9YXDuIVRUVE9g
+! Checksum: 3AO0stk4DJP7N7XXaMkOWw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.0.27.10
-! TimeUpdated: 2019-08-24T10:30:11+03:00
+! Version: 2.0.27.17
+! TimeUpdated: 2019-08-26T22:30:09+03:00
 ! Expires: 2 days (update frequency)
 ! Homepage: http://adguard.com/filters.html#annoyances
 ! License: http://creativecommons.org/licenses/by-sa/3.0/
@@ -1329,7 +1329,6 @@ malwarebytes.com###newsletter-signup
 rbc.ru##.subscribe-infographic
 magadanmedia.ru###soc_invites_block
 prostotech.com##.content a[href="https://t.me/Prostotech/"]
-livejournal.com##.mdspost-aside__item
 proglib.io##div[role="form"][dir="ltr"]
 proglib.io##a[href="tg://resolve?domain=proglibrary"]
 freeupscmaterials.org###ez-feature-top-container-wrap
@@ -1993,7 +1992,7 @@ onlinemarketingrockstars.de##.newsletter-inner-post
 onlinemarketingrockstars.de##.newsletter-sidebar
 eatthis.com##.gd-ad-strip
 facenews.ua##.joinus
-menrec.com,retail-insider.com,zozhnik.ru,football365.com,babylonbee.com,walterfootball.com,dexerto.com,netdoktor.de,24tv.ua###mc_embed_signup
+wweek.com,menrec.com,retail-insider.com,zozhnik.ru,football365.com,babylonbee.com,walterfootball.com,dexerto.com,netdoktor.de,24tv.ua###mc_embed_signup
 golem.de###abo-clip
 elmundo.es###banda_suscripcion
 lifehacker.ru###lhPopupsRoot
@@ -2319,7 +2318,7 @@ vice.com#@#.ad-placement
 @@||appsgames.ru/wp-content/plugins/angwp/assets/dev/js/advertising.js
 @@||appsgames.ru/wp-content/cache/min/1/wp-content/plugins/angwp/assets/dev/js/advertising-
 ||invitel.hu/lakossagi/assets/js/adblockerdetect.min.js
-invitel.hu,1movies.is,online-umwandeln.de,sonuma.be,devexchanges.info,spielspiele.de,mspoweruser.com#@#.afs_ads
+123moviestoday.net,invitel.hu,1movies.is,online-umwandeln.de,sonuma.be,devexchanges.info,spielspiele.de,mspoweruser.com#@#.afs_ads
 ||vsthouse.ru/adregain-anti.js
 imgmaze.pw##.adbwarning
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$empty,important,domain=9xbuddy.com
@@ -5183,6 +5182,14 @@ andoveradvertiser.co.uk,asianimage.co.uk,banburycake.co.uk,barryanddistrictnews.
 ! ###gdpr
 escortbook.com,looper.com,fromdoctopdf.com,learnersdictionary.com,spanishdict.com,merriam-webster.com,digi24.ro,antena3.ro,wikihow.com.tr,wikihow.cz,wikihow.it,wikihow.jp,wikihow.vn,wikihow.com,mobil.se,digisport.ro,periscope-solutions.com###gdpr
 !
+leroymerlin.ru##.cookie-notification-modal
+teachthought.com##.jnews-cookie-law-policy
+carpeludum.com###moove_gdpr_cookie_info_bar
+wblogy.com###cookie-box
+track-trace.com#$#.tingle-modal[style="z-index: 1100;"] { display: none!important; }
+track-trace.com#$#body { position: absolute!important; }
+foreks.com##body > div.crzFix
+vitaminler.com##.cookie_container
 rei.com###gdpr-cookie-banner-container
 re.kufar.by#?##content ~ div[class] > div:has(> p + button[data-name="cookies_button_ok"])
 ||tags.tiqcdn.com/utag/carlson/rh-com/prod/utag.js$domain=radissonhotels.com
@@ -5518,7 +5525,6 @@ heute.at,ots.at##.apa-consent-wrapper
 morizon.pl##.cookiesNotificationOuter
 lrt.lt##.consent-block
 onetwotrip.com##.container--inplace:has(> div > a[href*="-cookie-"])
-android-zone.ws###elGuestTerms
 excelviewer.herokuapp.com##body > div[style^="z-index:90000000; position: fixed; bottom: 0; right: 0;"]
 technogym.ru,technogym.com###cookiepolicy-dropdown
 youporngay.com###js_euCookieModal
@@ -6522,7 +6528,7 @@ timeanddate.de###mpo
 news.at,vgn.at,lustaufsleben.at,gusto.at,profil.at###cookieBgOverlay
 cocooncenter.de###infoscookies
 pclab.pl,forbes.pl,onet.pl##.cmp-app_gdpr
-1excelbet365.com,metin2tech.eu,forum.kaspersky.com,land-cruiser.ru,winclub.pl,iphoneyardim.net,schiffsmodell.net,iosgods.com,forum.kvinneguiden.no,forums.malwarebytes.com,turkish-media.com,excelbet365.com,gamedev.net,forum.brcbet.com,polar-chat.de,board.sonicstadium.org###elGuestTerms
+paradise-rpg.pl,crafted.pl,android-zone.ws,1excelbet365.com,metin2tech.eu,forum.kaspersky.com,land-cruiser.ru,winclub.pl,iphoneyardim.net,schiffsmodell.net,iosgods.com,forum.kvinneguiden.no,forums.malwarebytes.com,turkish-media.com,excelbet365.com,gamedev.net,forum.brcbet.com,polar-chat.de,board.sonicstadium.org###elGuestTerms
 tre.it##.box_Cookie
 sonymobile.com##body > .fullbleed-response
 storytel.ae,storytel.com.tr,storytel.dk,storytel.es,storytel.fi,storytel.in,storytel.is,storytel.nl,storytel.no,storytel.pl,storytel.ru,storytel.se###cookieWall
@@ -7549,7 +7555,7 @@ reddit.com##.infobar-wrap
 m64.info##.jb.cookie
 softpedia.com##.jobnotice_cnt
 onlinelibrary.wiley.com##.js-module.notification
-onlyoffice.com##.cookie_mess
+avs4you.com,onlyoffice.com##.cookie_mess
 bol.com##.js_cookie_message_container
 kl-ruppert.de##.kl-cookienote
 hertz247.co.uk##.lbContainer > div.lb-eucl
@@ -8573,6 +8579,7 @@ reddit.com##.XPromoPill
 !+ NOT_PLATFORM(ios, ext_android_cb)
 reddit.com##body > div[id="container"] > div[class="App"] > div[class="AppMainPage"] > div[class="NavFrame"] > div[class="XPromoPopup active"]
 !
+foreks.com##.foreksM
 m.iqiyi.com##.m-iqyDown
 donationalerts.com##.b-mobile-app
 lacentrale.fr##.meaApp
@@ -12583,6 +12590,7 @@ newsweek.com##iframe[src="http://sns.europe.newsweek.com/newsletter?popup=1"]
 !######### JS tweaks ##########
 !##############################
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/38925
 ! https://github.com/AdguardTeam/AdguardFilters/issues/38600
 ! https://github.com/AdguardTeam/AdguardFilters/issues/38558
 ! https://github.com/AdguardTeam/AdguardFilters/issues/38274
