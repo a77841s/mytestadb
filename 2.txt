@@ -1,9 +1,9 @@
 ﻿![Adblock Plus 2.0]
-! Checksum: Bgmvt9DvA/sfdL74RrK8qw
+! Checksum: 4RCdl6Yx0BMawFg/aRiY5Q
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.0.27.35
-! TimeUpdated: 2019-08-28T22:47:27+03:00
+! Version: 2.0.27.44
+! TimeUpdated: 2019-08-29T22:30:10+03:00
 ! Expires: 2 days (update frequency)
 ! Homepage: http://adguard.com/filters.html#annoyances
 ! License: http://creativecommons.org/licenses/by-sa/3.0/
@@ -94,8 +94,6 @@ focus.ua##.banner-wrap
 !
 ligainsider.de###popup_extra
 kickassanime.io###notes
-! facebook.com - reactions in live-video even when disabled via button
-facebook.com###fbVideoStreamingReactionsTray
 ccleaner.com##.top-banner
 ! https://github.com/AdguardTeam/AdguardFilters/issues/35622
 douploads.com###news_last
@@ -752,12 +750,15 @@ ina.fr###habillage
 ina.fr##.skinny--click
 !
 ! facebook.com
+! reactions in live-video even when disabled via button
+facebook.com###fbVideoStreamingReactionsTray
 ! "possible friends"
 facebook.com##._5pcr.fbUserPost._4nef._5pcr
 ! "People you may know" at https://www.facebook.com/profile.php
 facebook.com###pagelet_pymk_timeline
 ! "People you may know" at https://x.facebook.com/profile.php / https://mobile.facebook.com/profile.php / https://touch.facebook.com/profile.php https://m.facebook.com/profile.php
 facebook.com##div._10c_ > div[class="_3n40 _2jl2"][id="u_0_1s"]
+! "Suggestions for You"
 !
 ! 44.ua - notification about browser extension
 44.ua##.exp-line
@@ -1132,6 +1133,7 @@ sprashivalka.com##div[class="a1 "][style="height: 90px;"]
 !* Subscriptions/newsletters (not popups)
 !*
 gamerant.com##.w-newsletter-signup
+pantagraph.com###tncms-region-article_instory_bottom
 ottawamatters.com##.share-mailing
 dazeddigital.com##.subscribe-container
 opensource.com##.pane-bean-email-capture
@@ -2238,8 +2240,8 @@ sunderlandecho.com,blackpoolgazette.co.uk,derbyshiretimes.co.uk,lep.co.uk,yorksh
 /wp-content/*/an-temp/*
 ||s3.amazonaws.com/assets.sidearmsports.com/plugins/detector.min.js
 !
-/^https?:\/\/[^\/]+\.[^\/]+\/[a-zA-Z0-9]{32,}$/$script,~third-party,domain=~tkepyc.com|~lvxutzhzm.com|~bgxwfrjty.com|~pch.com|~open.fm|~money.pl|~tribunnews.com|~onet.pl|~przegladsportowy.pl|~ekstraklasa.tv|~medonet.pl|~auto-swiat.pl|~businessinsider.com.pl|~fakt.pl|~forbes.pl|~noizz.pl|~plejada.pl|~vod.pl|~komputerswiat.pl|~wp.pl|~coco.fr|~ign.com|~namemc.com|~roblox.com|~sap.com|~studio-svet.ru|~stumbleupon.com|~trueachievements.com|~tv.yandex.by|~tv.yandex.kz|~tv.yandex.ru|~tv.yandex.ua|~wetteronline.de|~justjared.com|~gfycat.com|~ejuslehq.com
-/^https?:\/\/[^\/]+\/[a-zA-Z0-9]{32,}$/$script,third-party,domain=~centrum.cz|~tkepyc.com|~pch.com|~open.fm|~money.pl|~tribunnews.com|~onet.pl|~przegladsportowy.pl|~ekstraklasa.tv|~medonet.pl|~auto-swiat.pl|~businessinsider.com.pl|~fakt.pl|~forbes.pl|~noizz.pl|~plejada.pl|~vod.pl|~komputerswiat.pl|~wp.pl|~coco.fr|~ign.com|~namemc.com|~roblox.com|~sap.com|~studio-svet.ru|~stumbleupon.com|~trueachievements.com|~tv.yandex.by|~tv.yandex.kz|~tv.yandex.ru|~tv.yandex.ua|~wetteronline.de|~justjared.com|~mynet.com
+/^https?:\/\/[^\/]+\.[^\/]+\/[a-zA-Z0-9]{32,}$/$script,~third-party,domain=~tkepyc.com|~lvxutzhzm.com|~bgxwfrjty.com|~pch.com|~open.fm|~money.pl|~tribunnews.com|~onet.pl|~przegladsportowy.pl|~ekstraklasa.tv|~medonet.pl|~auto-swiat.pl|~businessinsider.com.pl|~fakt.pl|~forbes.pl|~noizz.pl|~plejada.pl|~vod.pl|~komputerswiat.pl|~wp.pl|~coco.fr|~ign.com|~namemc.com|~roblox.com|~sap.com|~studio-svet.ru|~stumbleupon.com|~trueachievements.com|~tv.yandex.by|~tv.yandex.kz|~tv.yandex.ru|~tv.yandex.ua|~wetteronline.de|~justjared.com|~gfycat.com|~ejuslehq.com|~o2.pl|~pudelek.pl
+/^https?:\/\/[^\/]+\/[a-zA-Z0-9]{32,}$/$script,third-party,domain=~centrum.cz|~tkepyc.com|~pch.com|~open.fm|~money.pl|~tribunnews.com|~onet.pl|~przegladsportowy.pl|~ekstraklasa.tv|~medonet.pl|~auto-swiat.pl|~businessinsider.com.pl|~fakt.pl|~forbes.pl|~noizz.pl|~plejada.pl|~vod.pl|~komputerswiat.pl|~wp.pl|~coco.fr|~ign.com|~namemc.com|~roblox.com|~sap.com|~studio-svet.ru|~stumbleupon.com|~trueachievements.com|~tv.yandex.by|~tv.yandex.kz|~tv.yandex.ru|~tv.yandex.ua|~wetteronline.de|~justjared.com|~mynet.com|~o2.pl|~pudelek.pl
 /^https:\/\/.*?\/v2\/0\/[a-zA-Z0-9_-]{30,}$/$third-party,script,domain=~techworld.com
 ! Kill-Adblock
 /wp-content/plugins/kill-adblock/*
@@ -2408,7 +2410,6 @@ flightaware.com###blockerDisclaimerContainer
 worldoftruckstr.com##.td-ss-main-sidebar > aside.widget_text:not(:nth-child(9))
 worldoftruckstr.com##body > div[style*="position: fixed; "][style*="background: rgb(0, 0, 0);"]
 @@||techworld.com/scripts/ads.js
-@@||tags.news.com.au/prod/adblock/adblock.js
 crackberry.com##.swal-overlay
 kinopad.net##div[class^="adblock-warning"]
 spravy.pravda.sk##.perex-adblock-warning
@@ -6361,7 +6362,7 @@ wiesbadener-tagblatt.de#$##cookieNoticeModal { display:none!important; }
 nfl.com##div[style^="background: rgb(85, 85, 85);"][style*="padding-bottom: 13px; font-size: 14px"]
 herder.de###BottomNotification
 dtv.de###wh_cookie_advice
-payu.pl,bpmonline.com,visitlimburg.be,rubenweytjens.be,gameinformer.com,francenum.gouv.fr,russ-litigation.de,police.be,opendoors.de##.eu-cookie-compliance-banner
+carfax.eu,payu.pl,bpmonline.com,visitlimburg.be,rubenweytjens.be,gameinformer.com,francenum.gouv.fr,russ-litigation.de,police.be,opendoors.de##.eu-cookie-compliance-banner
 playboyrussia.com##.disclame_block
 lrytas.lt###navCookies
 hotnews.ro##div#avert
@@ -12327,6 +12328,7 @@ protanki.tv#$#.ant-modal-centered { display: none!important; }
 protanki.tv#$#body { overflow: visible!important; }
 ||i.bcrncdn.com/promotions/devaluation/182x600/
 iobit.com##.mainpart
+pantagraph.com###tncms-region-article_side_middle
 splice.com##a[data-qa="plugins-banner"]
 mixsoft.org###slidebox
 buyuksivas.com##.splash-popup
@@ -12538,6 +12540,11 @@ te-en.com##splashvip
 !######### CSS tweaks #########
 !##############################
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/39493
+adshorted.net#$##makingdifferenttimer { display: block!important; }
+! https://github.com/AdguardTeam/AdguardFilters/issues/39188
+duit.cc#$##download { display: block!important; }
+duit.cc#$#button#btn[onclick="generate()"] { display: none!important; }
 ! stylebook.de - removing white space at top
 stylebook.de#$#div.container[role="page"] > div.container[role="page"] { padding: 0px !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/36897
@@ -12617,6 +12624,7 @@ newsweek.com##iframe[src="http://sns.europe.newsweek.com/newsletter?popup=1"]
 !######### JS tweaks ##########
 !##############################
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/39573
 ! https://github.com/AdguardTeam/AdguardFilters/issues/39386
 ! https://github.com/AdguardTeam/AdguardFilters/issues/38925
 ! https://github.com/AdguardTeam/AdguardFilters/issues/38600

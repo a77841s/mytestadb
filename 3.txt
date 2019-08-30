@@ -1,9 +1,9 @@
 ﻿![Adblock Plus 2.0]
-! Checksum: /lrV+rjE2m2wPU9STZdCjQ
+! Checksum: sLjKgO/V6htoH7cfE54yFQ
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.8.78
-! TimeUpdated: 2019-08-28T22:30:36+03:00
+! Version: 2.0.8.80
+! TimeUpdated: 2019-08-29T22:30:40+03:00
 ! Expires: 2 days (update frequency)
 ! Homepage: http://adguard.com/filters.html#privacy
 ! License: http://creativecommons.org/licenses/by-sa/3.0/
@@ -145,6 +145,8 @@ journal-plaza.net##.rightside div.block.bnavi[-ext-has="h3.dtitle:contains(Сч�
 ! ||e.crashlytics.com^
 ! ||settings.crashlytics.com^
 !
+||vast.videocdn.tv^$third-party
+||chali.info^$third-party
 ||ulogin-stats.ru^$third-party
 ||stat.enter-system.com^$third-party
 ||t.hoood.info^
@@ -3409,8 +3411,9 @@ nethunt.com/api/v1/track/email/$image
 ||collection-endpoint-staging.herokuapp.com^
 ! end:
 !
+! This rule breaks Australian sites
 !+ NOT_PLATFORM(ios, ext_safari, ext_android_cb)
-||tags.news.com.au^
+||tags.news.com.au^$~script
 !
 ||analytics-ingress-global.bitmovin.com^
 ||logs.insight.rapid7.com^
@@ -5049,6 +5052,7 @@ _tracking.php?b=
 ! The site should be carefully checked when you add this rule
 ||tags.tiqcdn.com/utag/*/prod/utag.js$domain=radissonhotels.com
 !
+||movie2.kinoche.ru/iframe.js?id=$third-party
 ||articles2.marketrealist.com/aptrk^
 ||addthisedge.com/live/boost/*/_ate.track
 ||macworld.com/www/js/analytics/tracking.js
@@ -6776,7 +6780,6 @@ link.gmapp*.net$image
 ! https://github.com/AdguardTeam/AdguardFilters/issues/35324
 @@||sb.scorecardresearch.com/beacon.js$domain=ntvspor.net
 ! https://github.com/AdguardTeam/AdguardFilters/issues/35208
-@@||tags.news.com.au/prod/heartbeat/v*/VideoHeartbeat.min.js$domain=dailytelegraph.com.au
 @@||cdn-gl.imrworldwide.com/novms/*/ggng*.js$domain=dailytelegraph.com.au
 ! https://github.com/AdguardTeam/AdguardFilters/issues/34934
 @@||google-analytics.com/analytics.js$domain=polygon.com
@@ -6795,14 +6798,11 @@ link.gmapp*.net$image
 @@||scdn.cxense.com/cx.js$domain=sbs.com.au
 @@||nexus.ensighten.com/sbs/sbsprod/$domain=sbs.com.au
 ! https://github.com/AdguardTeam/AdguardFilters/issues/34540
-! https://github.com/AdguardTeam/AdguardFilters/issues/34522
-@@||tags.news.com.au/prod/heartbeat/v*/VideoHeartbeat.min.js$domain=news.com.au
 ! https://github.com/AdguardTeam/AdguardFilters/issues/34387
 @@||scdn.cxense.com/cx.js$domain=digi24.ro
 ! https://github.com/AdguardTeam/AdguardFilters/issues/34315
 @@||naver.net/wcslog.js$domain=itemmania.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/34137
-@@||tags.news.com.au/prod/heartbeat/v*/VideoHeartbeat.min.js$domain=heraldsun.com.au
 @@||cdn-gl.imrworldwide.com/novms/*/ggng*.js$domain=heraldsun.com.au
 ! https://github.com/AdguardTeam/AdguardFilters/issues/34135
 @@||cdn-gl.imrworldwide.com/novms/*/ggng*.js$domain=news.com.au
@@ -6836,8 +6836,6 @@ link.gmapp*.net$image
 @@||googletagmanager.com/gtm.js$domain=capital.fr
 ! t-online.de - broken links in article
 @@||googletagmanager.com/gtm.js$domain=t-online.de
-! https://github.com/AdguardTeam/AdguardFilters/issues/30787
-@@||tags.news.com.au/prod/tad/tad.js$domain=news.com.au
 ! ntvplus.tv - fixing player
 @@||google-analytics.com/analytics.js$domain=ntvplus.tv
 ! https://github.com/AdguardTeam/AdguardFilters/issues/32097
