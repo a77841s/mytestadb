@@ -1,9 +1,9 @@
-﻿![Adblock Plus 2.0]
-! Checksum: sLjKgO/V6htoH7cfE54yFQ
+[Adblock Plus 2.0]
+! Checksum: Axmz5q64x2+I9fp7F5oHlA
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.8.80
-! TimeUpdated: 2019-08-29T22:30:40+03:00
+! Version: 2.0.8.82
+! TimeUpdated: 2019-08-31T01:30:34+03:00
 ! Expires: 2 days (update frequency)
 ! Homepage: http://adguard.com/filters.html#privacy
 ! License: http://creativecommons.org/licenses/by-sa/3.0/
@@ -145,6 +145,7 @@ journal-plaza.net##.rightside div.block.bnavi[-ext-has="h3.dtitle:contains(Сч�
 ! ||e.crashlytics.com^
 ! ||settings.crashlytics.com^
 !
+||px.staticfiles.at^^$third-party
 ||vast.videocdn.tv^$third-party
 ||chali.info^$third-party
 ||ulogin-stats.ru^$third-party
@@ -5057,6 +5058,7 @@ _tracking.php?b=
 ||addthisedge.com/live/boost/*/_ate.track
 ||macworld.com/www/js/analytics/tracking.js
 ||sheego.de/request/pvp.php
+||yastatic.net/s3/distribution/yanalytics/yanalytics.js
 ||c0.froala.com/i?
 ||streamlava.cc/stats^
 ||pjstat.com^$third-party
